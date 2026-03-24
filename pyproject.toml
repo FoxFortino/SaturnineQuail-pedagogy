@@ -4,4 +4,7 @@ version = "0.1.0"
 description = "The pedagogical component of Willow Fox Fortino's PhD Dissertation."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "jupyter-book>=2.1.2",
+    "jupyterlab>=4.5.6",
+]

@@ -99,3 +99,4 @@ In Python, the `pandas` library provides the `DataFrame` object, the workhorse f
 - `df.info()`: Provides column names, non-null counts, and data types. Missing data often appears here first, but only if the missing data is represented by null values (`None` or `nan`).
 - `df.describe()`: Generates summary statistics (count, mean, standard deviation, min, quartiles, max) for numeric columns. Pay particular attention to min/max values—they often expose outliers or coding errors.
 
+Go to see [Lesson2_DataExploration.ipynb](https://github.com/FoxFortino/SaturnineQuail-pedagogy/blob/main/Chapter02/Lesson2_DataExploration.ipynb) to see this in practice.

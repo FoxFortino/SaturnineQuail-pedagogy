@@ -25,7 +25,7 @@ Pearson's correlation coefficient, denoted as $r_{xy}$, measures the strength an
 
 Take care to notice that $r_{xy} = 1$ means the data are identical, except for a possible constant offset.
 
--
+---
 
 The coefficient is defined as:
 

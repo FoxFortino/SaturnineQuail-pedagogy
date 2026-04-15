@@ -54,7 +54,7 @@ Under this view, after 101 coin flips yielding 51 heads, $P(\text{heads}) = 51/1
 
 **Bayesian probability** treats probability as a degree of belief that can incorporate prior information. A Bayesian statistician who observes ten heads in a row but holds a strong prior belief that the coin is fair will still expect approximately 50% heads in the long run. This flexibility makes Bayesian methods particularly powerful when data are scarce or when prior knowledge exists (for example, from theory, or from historical data about the same phenomenon).
 
-<mark>Add example here<mark/>
+<mark>TODO: Add example here<mark/>
 
 For most introductory data exploration tasks, the frequentist interpretation suffices. However, many popular machine learning methods (e.g., Gaussian processes, MCMC) explicitly rely on Bayesian reasoning.
 

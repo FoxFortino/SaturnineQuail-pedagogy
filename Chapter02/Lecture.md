@@ -23,8 +23,9 @@ Pearson's correlation coefficient, denoted as $r_{xy}$, measures the strength an
 - $r_{xy} < 0$ indicates negative correlation (or anticorrelation)
 - $r_{xy} = 0$ indicates no linear relationship
 
-(at the extreme, $r_{xy} = 1$ means the data are identical, except for a possible constant offset).
+Take care to notice that $r_{xy} = 1$ means the data are identical, except for a possible constant offset.
 
+-
 
 The coefficient is defined as:
 
@@ -37,7 +38,9 @@ A common pitfall is treating $r_{xy} = 0$ as evidence of no correlation whatsoev
 
 The best thing you can do to avoid missing obvious correlations in your data is visualize it with a scatter plot. `pandas` implements this with `pandas.plotting.scatter_matrix()` (see [Lesson2_DataExploration.ipynb](https://github.com/FoxFortino/SaturnineQuail-pedagogy/blob/main/Chapter02/Lesson2_DataExploration.ipynb)).
 
-ADD FIGURE
+![](figures/linear_corr.png)
+
+This figure demonstrates the limitations of the Pearson's correlation coefficient. The top row and center row show data with the same $r_{xy}$, but note how the noisier data in the top row can have identical $r_{xy}$ but look very different. The bottom row show data with obvious correlation. That is, each data point is clearly related to each other in order to make the displayed pattern. However, these datasets all have $r_{xy} = 0$
 
 ## Probability
 
@@ -49,7 +52,9 @@ $$P(E) = \lim_{n \to \infty} \frac{\text{number of times E occurs}}{n}$$
 
 Under this view, after 101 coin flips yielding 51 heads, $P(\text{heads}) = 51/101 \approx 0.505$.
 
-**Bayesian probability** treats probability as a degree of belief that can incorporate prior information. A Bayesian statistician who observes ten heads in a row but holds a strong prior belief that the coin is fair will still expect approximately 50% heads in the long run. This flexibility makes Bayesian methods particularly powerful when data are scarce or when prior knowledge exists (for example, from theory, or from historical data about the same phenomenon CAN WE ADD AN EXAMPLE?).
+**Bayesian probability** treats probability as a degree of belief that can incorporate prior information. A Bayesian statistician who observes ten heads in a row but holds a strong prior belief that the coin is fair will still expect approximately 50% heads in the long run. This flexibility makes Bayesian methods particularly powerful when data are scarce or when prior knowledge exists (for example, from theory, or from historical data about the same phenomenon).
+
+<mark>Add example here<mark/>
 
 For most introductory data exploration tasks, the frequentist interpretation suffices. However, many popular machine learning methods (e.g., Gaussian processes, MCMC) explicitly rely on Bayesian reasoning.
 
@@ -67,12 +72,12 @@ When two events are independent — the two events do not influence each other w
 #### Independent Event Rules:
 
 $$
-\begin{eqnarray}
-    \textrm{If }~~~P(A) \cap P(B) &= 0 \textrm{ then:}\\
+\begin{align}
+    \textrm{If }P(A) \cap P(B) = 0 \textrm{ then:}\\
     P(A \cup B) &= P(A) + P(B) \\
     P(A \cap B) &= P(A) * P(B) \\
     P(A | B) &= P(A) \\
-\end{eqnarray}
+\end{align}
 $$
 ### Dependent Events
 
@@ -81,12 +86,12 @@ When events are dependent upon each other in some way, the preceding relationshi
 #### Dependent Event Rules:
 
 $$
-\begin{eqnarray}
-    \textrm{If }~~P(A) \cap P(B) &> 0 \textrm{ then:}\\
+\begin{align}
+    \textrm{If }P(A) \cap P(B) > 0 \textrm{ then:}\\
     P(A | B) &< P(A) \\
     P(A | B) &= \frac{P(A \cap B)}{P(B)} \\
     P(A \cap B) &= P(A) P(B|A) \\
-\end{eqnarray}
+\end{align}
 $$
 
 ## Practical Data Exploration with Pandas
@@ -99,4 +104,4 @@ In Python, the `pandas` library provides the `DataFrame` object, the workhorse f
 - `df.info()`: Provides column names, non-null counts, and data types. Missing data often appears here first, but only if the missing data is represented by null values (`None` or `nan`).
 - `df.describe()`: Generates summary statistics (count, mean, standard deviation, min, quartiles, max) for numeric columns. Pay particular attention to min/max values—they often expose outliers or coding errors.
 
-Go to see [Lesson2_DataExploration.ipynb](https://github.com/FoxFortino/SaturnineQuail-pedagogy/blob/main/Chapter02/Lesson2_DataExploration.ipynb) to see this in practice.
+See [Lesson2_DataExploration.ipynb](https://github.com/FoxFortino/SaturnineQuail-pedagogy/blob/main/Chapter02/Lesson2_DataExploration.ipynb) to see this in practice.

@@ -16,7 +16,7 @@ We will discuss two important distributions: the Poisson and the Gaussian. The f
 
 ## The Poisson Distribution
 
-The best way to form an intuitive understanding of any distribution is to examine an example that resonates with you. Since I don' know who *you* are, I will choose an example that resonates with me.
+The best way to form an intuitive understanding of any distribution is to examine an example that resonates with you. Since I don't know who *you* are, I will choose an example that resonates with me.
 
 Consider a leaky faucet. Evey so often, a drop of water will form and drip from the faucet. As a statistician, you measure the rate of the dripping over a long time and find that an average of two drops form every minute. However, you note that he number of drops per minute is a random variable; sometimes there are more drops and sometimes there are fewer. You then might wonder: what is the probability that 4 drops form in one minute? The Poisson distribution comes to your rescue!
 

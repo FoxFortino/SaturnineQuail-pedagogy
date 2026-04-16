@@ -82,7 +82,7 @@ Quantiles divide a distribution into equal-sized intervals. For the Gaussian dis
 | 4 | 99.993% |
 | 5 | 99.99994% |
 
-Remember our tesrt example? We said that $\mu=85\%$ and $\sigma=5\%$. Using this chart — *and assuming that the test scores are indeed distributed according to a Gaussian* — we can say that $\approx 68\%$ of students will have scored within one standard deviation of the mean (between $80\%$ and $90\%$) and $\approx 95\%$ of students scored within two standard deviations (between $75\%$ and $95\%$).
+Remember our test example? We said that $\mu=85\%$ and $\sigma=5\%$. Using this chart — *and assuming that the test scores are indeed distributed according to a Gaussian* — we can say that $\approx 68\%$ of students will have scored within one standard deviation of the mean (between $80\%$ and $90\%$) and $\approx 95\%$ of students scored within two standard deviations (between $75\%$ and $95\%$).
 
 **NB:** This table will become exceptionally relevent in the next lecture on Null Hypothesis Rejection Testing.
 

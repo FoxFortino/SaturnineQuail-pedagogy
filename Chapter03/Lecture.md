@@ -16,7 +16,7 @@ We will discuss two important distributions: the Poisson and the Gaussian. The f
 
 ## The Poisson Distribution
 
-The best way to form an intuitive understanding of any distribution is to examine an example that resonates with you. Since I don' know who *you* are, I will choose an example that resonates with me.
+The best way to form an intuitive understanding of any distribution is to examine an example that resonates with you. Since I don't know who *you* are, I will choose an example that resonates with me.
 
 Consider a leaky faucet. Evey so often, a drop of water will form and drip from the faucet. As a statistician, you measure the rate of the dripping over a long time and find that an average of two drops form every minute. However, you note that he number of drops per minute is a random variable; sometimes there are more drops and sometimes there are fewer. You then might wonder: what is the probability that 4 drops form in one minute? The Poisson distribution comes to your rescue!
 
@@ -26,7 +26,7 @@ $$P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}, \quad k = 0, 1, 2, \ldots$$
 
 The random variable — the *event* — is $X$ and represents the number of drops that occur in a particular minute. We don't know what $X$ is, but we know that it is distributed according to a Poisson distribution with an average value, $\lambda$, of 2. The values that any distribution is defined on is known as the **support** and in the case of the Poisson distribution we like to call it $k$.
 
-With this meagre amount of knowledge of distributions, we can already answer our question about the leaky faucet. We know that $\lambda=2 \text{ drops per minute}$, and we want to know the probability of $k=2 \text{ drops}$ forming in one minute. Using the PMF: $$P(X=4) = \frac{2^4 e^{-2}}{4!} = 0.09$$
+With this meagre amount of knowledge of distributions, we can already answer our question about the leaky faucet. We know that $\lambda=2 \text{ drops per minute}$, and we want to know the probability of $k=4 \text{ drops}$ forming in one minute. Using the PMF: $$P(X=4) = \frac{2^4 e^{-2}}{4!} = 0.09$$
 
 There's a $\approx9\%$ chance of observing four drops in one minute from the leaky faucet. Wow! We can formalize the answer to our question with the statement: "The probability of measuring $k$ drops in the time interval is $P(X=k)$." We can even state it more generally: "The probability that the random variable $X$ takes on the value $k$ is $P(k)$."
 
@@ -82,7 +82,7 @@ Quantiles divide a distribution into equal-sized intervals. For the Gaussian dis
 | 4 | 99.993% |
 | 5 | 99.99994% |
 
-Remember our tesrt example? We said that $\mu=85\%$ and $\sigma=5\%$. Using this chart — *and assuming that the test scores are indeed distributed according to a Gaussian* — we can say that $\approx 68\%$ of students will have scored within one standard deviation of the mean (between $80\%$ and $90\%$) and $\approx 95\%$ of students scored within two standard deviations (between $75\%$ and $95\%$).
+Remember our test example? We said that $\mu=85\%$ and $\sigma=5\%$. Using this chart — *and assuming that the test scores are indeed distributed according to a Gaussian* — we can say that $\approx 68\%$ of students will have scored within one standard deviation of the mean (between $80\%$ and $90\%$) and $\approx 95\%$ of students scored within two standard deviations (between $75\%$ and $95\%$).
 
 **NB:** This table will become exceptionally relevent in the next lecture on Null Hypothesis Rejection Testing.
 
